@@ -545,12 +545,12 @@
       background: #89FFF8;
       transition-delay: 0.1s;
       transform: scale(90) translate(-12px, -2px);
+      animation: glitch infinite 1s 1.3s;
     }
 
     .loaded .frog:before,
     .loaded .frog:after {
       transform: scale(1) translate(0, 0);
-      animation: glitch infinite 1s 1.2s;
     }
 
     .loaded .frog svg {
@@ -641,7 +641,25 @@
     @media (max-width: 480px) {
 
       .logo {
-        top: 55%;
+        top: 240px;
+        transform: translateY(0);
+      }
+
+      .left-corner-tag:before, .left-corner-tag {
+        width: 114px;
+      }
+
+      .left-corner-tag {
+        font-size: 30px;
+        left: 41px;
+      }
+
+      .left-corner-tag:after{
+        height: 20px;
+      }
+
+      .left-corner-deco {
+        display: none;
       }
 
       .main-title,
